@@ -1,0 +1,122 @@
+** start of undefined **
+
+<!DOCTYPEhtml>
+<html lang="en"> </html>
+  <head> 
+    <meta charset="UTF-8">
+  <title>Hotel G Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body> 
+    <h1 id="title">Hotel G Survey</h1>
+    <p id="description">Thank you for your feedback<p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="first-name" id="name-label">Enter your first name: <input id="name" type="text" id="first-name" placeholder="John" required></label>
+
+        <label for="last-name" id="name-label">Enter your last name: <input id="name" type="text" id="last-name" placeholder="Robinson" required></label>
+
+        <label for="email" id="email-label">Enter your email: <input id="email" id="name" type="email" placeholder="johnrobinson@email.com"  required></label>
+    </fieldset>
+<fieldset>
+
+    <legend>Reason for travel: (required)</legend>
+      <label for="buisness"><input type="radio" id="business-travel" name="travel-reason"
+      class="inline" value="business-travel" required>Business</label>
+
+      <label for="leisure"><input type="radio" id="leisure-travel" name="travel-reason" class="inline" value="business-travel" required>Leisure</label>
+
+        <label for="age" id="number-label">Enter your Age (optional): <input id="number" id="number" type="number" Pattern="[0-9]" min="0" max="999" placeholder="35"></label>
+  
+        <label for="recommend" id="recommend-label">Would you recommmend us to anyone?
+            <select id="dropdown" name="referrer"> 
+              <option value="">(select one)</option>
+              <option value="1">Absolutley!</option>
+              <option value="2">Not Sure</option>
+              <option value="3">No Way!</option>
+            </select>
+        </label>
+      <label for="favorite">Favorite part of your stay? (check all that apply) 
+      <input type="checkbox" id="customer-service" name="customer-service" value="1">
+      <label for="customer-service">Customer Service<label>
+      <input type="checkbox" id="ambience" name="ambience" value="2">
+      <label for="ambience">Ambience</label>
+      <input type="checkbox" id="cleaniliness" name="cleanliness" value="3">
+      <label for="cleanliness">Cleanliness</label>
+      <input type="checkbox" id="ambience" name="ambience" value="4">
+      <label for="ambience">Ambience</label>
+      <input type="checkbox" id="location" name="location" value="5">
+      <label for="location">Location</label>
+      <input type="checkbox" id="room-service" name="room service" value="6">
+      <label for="room-service">Room Service</label>
+      <input type="checkbox" id="food-quality" name="food-quality" value="7">
+      <label for="food-quality">Food Quality</label>
+
+      </label>
+
+
+
+    </fieldset>
+
+    <fieldset>
+    <label for="comments" id="comments-label">Additional comments or suggestions? <textarea id="comments" type="text" rows="3" cols="30" placeholder="My stay was amazing, however...."></textarea></label>
+        </fieldset>
+   <label><input id="submit" type="submit" value="Submit"></input></label>
+     </form>
+       </body>
+    </html>
+
+** end of undefined **
+
+** start of undefined **
+
+h1, p {
+  text-align: center;
+  margin: 1em auto;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Georgia;
+  font-size: 16px;
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  }
+
+label,input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 1px solid;
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+** end of undefined **
+
